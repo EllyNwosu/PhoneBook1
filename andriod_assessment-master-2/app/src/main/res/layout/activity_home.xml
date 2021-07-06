@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/nextPageButton"
+        android:layout_width="129dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previousPageButton"
+        app:layout_constraintTop_toTopOf="@+id/previousPageButton" />
+
+    <Button
+        android:id="@+id/previousPageButton"
+        android:layout_width="116dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/nextPageButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/serviceView"
+        android:layout_width="322dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="24dp"
+        android:text="Choose Any Service You need!"
+        android:textAlignment="center"
+        android:textColor="#10EC08"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/buy_image"
+        app:layout_constraintStart_toStartOf="@+id/serviceView"
+        app:layout_constraintTop_toBottomOf="@+id/serviceView"
+        app:srcCompat="@drawable/ic_car" />
+
+    <ImageView
+        android:id="@+id/buy_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/serviceView"
+        app:layout_constraintStart_toEndOf="@+id/car_image"
+        app:layout_constraintTop_toTopOf="@+id/car_image"
+        app:srcCompat="@drawable/ic_car_buy" />
+
+    <ImageView
+        android:id="@+id/repair_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/car_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/car_image"
+        app:layout_constraintTop_toBottomOf="@+id/rental_view"
+        app:srcCompat="@drawable/ic_maintain" />
+
+    <TextView
+        android:id="@+id/rental_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Rental"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/car_image"
+        app:layout_constraintStart_toStartOf="@+id/car_image"
+        app:layout_constraintTop_toBottomOf="@+id/car_image" />
+
+    <TextView
+        android:id="@+id/repair_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repairs"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/repair_image"
+        app:layout_constraintStart_toStartOf="@+id/repair_image"
+        app:layout_constraintTop_toBottomOf="@+id/repair_image" />
+
+    <TextView
+        android:id="@+id/Buy_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Buy &amp; Sell"
+        android:textSize="14sp"
+        android:maxLines="20"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/buy_image"
+        app:layout_constraintStart_toStartOf="@+id/buy_image"
+        app:layout_constraintTop_toBottomOf="@+id/buy_image" />
+
+    <ImageView
+        android:id="@+id/accessories_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/buy_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buy_image"
+        app:layout_constraintTop_toTopOf="@+id/repair_image"
+        app:srcCompat="@drawable/ic__accessories" />
+
+    <TextView
+        android:id="@+id/acccessories_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accessories"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/accessories_image"
+        app:layout_constraintStart_toStartOf="@+id/accessories_image"
+        app:layout_constraintTop_toBottomOf="@+id/accessories_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
